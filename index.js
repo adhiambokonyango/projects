@@ -5,6 +5,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(__dirname ));
 
+const db = require('./databaseConnection');
+
 app.get("/", (req, res)=>{
     res.sendFile( __dirname + "/" + "form.html" );
 })
