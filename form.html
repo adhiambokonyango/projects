@@ -1,6 +1,31 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .searchbox {
+      float: right;
+      margin-right: 6px;
+    }
+    input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+    .searchbox button {
+
+      padding: 8px;
+      margin-top: 10px;
+      margin-left: 10px;
+      background: orange;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .searchbox button:hover {
+      background: blue;
+    }
+  </style>
 </head>
 <body>
 <div class="banner">
@@ -8,6 +33,9 @@
     <h1>United Nations Development Programme</h1>
   </main>
 </div>
+
+
+
 <svg style="display:none;">
   <defs>
 
@@ -38,30 +66,35 @@
 <nav class="nav__cont">
   <ul class="nav">
     <li class="nav__items ">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-        <use xlink:href="#home"></use>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
       </svg>
       <a href="">Home</a>
     </li>
 
     <li class="nav__items ">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <use xlink:href="#search"></use>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+
       </svg>
-      <a href="">Search</a>
+      <a href="#roster">Roster</a>
     </li>
 
     <li class="nav__items ">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <use xlink:href="#map"></use>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+        <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1ZM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V8Zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1Z"/>
       </svg>
-      <a href="">Map</a>
+      <a href="">Resources</a>
     </li>
 
     <li class="nav__items ">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 35.6">
-        <use xlink:href="#planner"></use></svg>
-      <a href="">Planner</a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-columns-reverse" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 .5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10A.5.5 0 0 1 4 .5Zm-4 2A.5.5 0 0 1 .5 2h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 4h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 6h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 8h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Z"/>
+      </svg>
+      <a href="">Reports</a>
     </li>
 
   </ul>
@@ -73,6 +106,15 @@
     <li><a href="#news">News</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#about">About</a></li>
+
+    <div class="searchbox">
+      <form
+              onsubmit="return postSearch(this)">
+        <input id="input_search" type="text" placeholder=" Search...." name="item">
+        <button onclick="postSearch()" type="submit"   id="search">Submit</button>
+      </form>
+    </div>
+
   </ul>
 </div>
 
@@ -80,26 +122,82 @@
 
 <div class="wrapper">
 
+<!--  <li id="myList"></li>-->
+
   <div class="grid-container">
     <div class="grid-item"><h2>PROJECTS</h2></div>
     <div class="grid-item"></div>
-    <div class="grid-item"></div>
   </div>
+
   <div class="grid-container">
-    <div class="grid-item"><h3>GEF Small Grants Programme (SGP)</h3></div>
-    <div class="grid-item">
-      Kenya is endowed with globally significant terrestrial, freshwater and marine biodiversity: the country is home to over 6,500 plant species, more than 260 of which are found nowhere else in the world, and there is a higher concentration of large mammals in Kenya than almost anywhere else on the planet. The country's varied and diverse ecosystems are of paramount importance to socioeconomic development, with a strong cultural identity and a large proportion of livelihoods linked to agricultural activities, and the fact that forest, wetland, and seascape ecosystems are central to the lives of many communities, particularly in rural areas.
+    <div class="grid-item" id="griddiv">
+
     </div>
+
   </div>
-  <div class="grid-container">
-    <div class="grid-item"><h3>GEF Small Grants Programme (SGP)</h3></div>
-    <div class="grid-item">
-      Kenya is endowed with globally significant terrestrial, freshwater and marine biodiversity: the country is home to over 6,500 plant species, more than 260 of which are found nowhere else in the world, and there is a higher concentration of large mammals in Kenya than almost anywhere else on the planet. The country's varied and diverse ecosystems are of paramount importance to socioeconomic development, with a strong cultural identity and a large proportion of livelihoods linked to agricultural activities, and the fact that forest, wetland, and seascape ecosystems are central to the lives of many communities, particularly in rural areas.
-    </div>
-  </div>
+
 </div>
 
 
+
+<script type="text/javascript">
+  let apiUrl = 'http://192.168.42.74:3000/fetch_projects';
+  fetch(apiUrl).then(response => {
+
+    return response.json();
+  }).then(data => {
+    // Work with JSON data here
+
+
+    data.forEach((item) => {
+
+      // let listDescription = document.getElementById("projectDescription");
+      let h3 = document.createElement("h3");
+      h3.innerHTML = `${item.ProjectName}`
+      let p = document.createElement("p");
+      p.innerHTML = `${item.ProjectDescription}`;
+      let createdDiv = document.createElement("div");
+      createdDiv.appendChild(h3);
+      createdDiv.appendChild(p);
+      // h3.innerText = item.ProjectName;
+      let gridDiv = document.querySelector("#griddiv");
+      gridDiv.append(createdDiv);
+    });
+
+    console.log(data);
+  }).catch(err => {
+    // Do something for an error here
+  });
+
+
+  function postSearch() {
+    let i = document.getElementById('input_search').value
+    fetch('http://192.168.42.74:3000/search_projects', {
+      method: 'POST',
+      body: JSON.stringify({item: i})
+    })
+            .then(response => response.json())
+            .then(json => {
+              console.log(json);
+            });
+  }
+
+  console.log(document.getElementById('input_search').value);
+</script>
+
+
+
+<!--<script>-->
+<!--  let data = "http://127.0.0.1:3000/fetch_projects";-->
+
+<!--  let list = document.getElementById("myList");-->
+
+<!--  data.forEach((item) => {-->
+<!--    let li = document.createElement("li");-->
+<!--    li.innerText = item;-->
+<!--    list.appendChild(li);-->
+<!--  });-->
+<!--</script>-->
 
 </body>
 </html>
