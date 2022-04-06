@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Budget Form</title>
+      <link rel="stylesheet" type="text/css" href=".style/css">
+
+</head>
+<body>
+     <div class="registration-form">
+     <h1>Budget Form</h1>
+     <form action="#" method="post">
+          <p>Donor id:</p>
+          <input type="text" name="donorid" placeholder="Donor id">
+		  
+          <p>Donor Name:</p>
+          <input type="text" name="donorname" placeholder="Donor Name">
+		  
+          <p>Project id:</p>
+          <input type="text" name="projectid" placeholder="Project id">
+		  
+		  <p>Amount Donated:</p>
+		  <label style="position: relative;">Ksh</label>
+          <input type="number" style="text-indent: 0px;">
+		  
+          <p>Date of Registration:</p>
+          <input type="date" name="dateofregistration" placeholder="Date of Registration">
+          <button type="submit">Save Record</button>
+     </form>
+     </div>
+	 <style>
+	 *{
+	 padding:0;
+	 margin:0;
+	 font-family: sans-serif;
+	 }
+	 
+	 body{
+	background:url('emplo.jpg');
+	
+}
+
+.registration-form{
+	position: absolute;
+	top:10%;
+	left:30%;
+	transform: translate(-50%,-50%)
+    width:400 px;}
+
+.registration-form h1{
+	font-size:30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin:40px 0;
+}
+.registration-form p {
+	font-size:20px;
+	margin:15px 0px;
+}
+.registration-form input {
+	font-size:16px;
+	padding:15px 10px;
+	width:100%;
+	border:0;
+	border-radius: 5px;
+	outline: none;
+}
+.registration-form button{
+     font-size:18px;
+	 font-weight:bold;
+	 margin:20px 0;
+	 padding:10px 15px;
+	 width:50%;
+	 border:0;
+	 border-radius:5px;
+	 background-color: #fff;
+	}
+
+.registration-form button:hover{
+color: red;
+}
+</style>	 
+ </body>
+ </html>

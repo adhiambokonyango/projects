@@ -61,7 +61,6 @@ app.get("/fetch_projects", (req, res)=>{
 
 //2. search
 app.post("/search_projects", (req, res)=>{
-console.log(req.body);
     let tableName = "project";
     let columnName = "ProjectName";
     let sql = ` SELECT * FROM ${tableName} WHERE ${columnName} LIKE '%${req.body.item}%' `;
@@ -74,10 +73,7 @@ console.log(req.body);
                 console.log(err)
                 res.send("an error occurred");
             } else {
-
-                res.render('project_search',
-                    {  item:  `${result}`});
-
+                res.send(result);
             }
         })
 
@@ -100,6 +96,6 @@ app.post("/add_project", (req, res)=>{
 
 })
 
-app.listen(3000, "192.168.42.74",()=>{
+app.listen(3000, ()=>{
     console.log("server started on port: 3000")
 });
